@@ -1,0 +1,51 @@
+body {
+  font-family: "Lucida Sans";
+  margin: 10%;
+}
+
+header {
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-family: Verdana;
+  font-size: 2rem;
+  color: rgb(63, 20, 12);
+}
+
+fieldset {
+  margin: 1em auto;
+  border: 1.5px solid salmon;
+}
+
+legend {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(165, 45, 32);
+}
+
+input:focus,
+select:focus {
+  background-color: rgb(184, 184, 184);
+}
+
+input:hover,
+select:hover {
+  background-color: rgb(94, 94, 94);
+}
+
+#boton-crear {
+  font-size: 2em;
+  padding: 0.5em;
+  background-color: rgb(107, 1, 6);
+  color: white;
+}
+
+.inline {
+  display: inline;
+}
+
+.centrado {
+  text-align: center;
+}

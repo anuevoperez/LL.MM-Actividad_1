@@ -34,6 +34,14 @@ nav {
   display: none;
 }
 
+iframe {
+  border: 1px solid black;
+  width: 100%;
+}
+
+#mapa {
+  margin-top: 5%;
+}
 /* En pantallas móviles se sustituye por un desplegable */
 @media screen and (max-width: 750px) {
   .barraNav a {
