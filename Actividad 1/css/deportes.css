@@ -4,169 +4,76 @@
 }
 
 header { /* Posición del header - Logo*/
-  position: 20px;
+  text-align: center;
 }
 
 header h1 { /* Titular de la sección */
   text-align:center;
 }
 
-/* Adaptación responsive - Monitores > 1300px */
-@media screen and (min-width: 1300px){
-  .barraNav { /* Posición del menú */
-      overflow: hidden;
-      background-color: #b11016;
-      color: white;
-      box-sizing: border-box;
-      flex-direction: row;
+
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #b11016;
+    overflow: hidden;
   }
-  .barraNav a { /* Posición de los elementos del menú */
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;  
-    float: left;
-    display: block;
+  /* Estilo de los elementos del nav*/
+  .barraNav a {
     color: #f2f2f2;
-    text-align: center;
-    padding: 12px 110px;
+    padding: 1.5rem 2rem;
     text-decoration: none;
+    font-size: 1.5rem;
   }
-  .barraNav a:hover { /* Posición - animación del menú */
-      background-color: rgb(255, 255, 255);
-      color: black;
+  
+  /* Cambia de color al pasar el ratón*/
+  .barraNav a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Oculta el boton desplegable */
+  .barraNav .icono {
+    display: none;
+  }
+  
+
+
+
+/* En pantallas móviles se sustituye por un desplegable */
+@media screen and (max-width: 750px) {
+  .barraNav a {
+    display: none;
+  }
+
+  .barraNav a.icono {
+    float: right;
+    display: block;
+  }
+
+  .barraNav.responsive {
+    position: relative;
+  }
+  .barraNav.responsive a.icono {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .barraNav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  nav {
+    display: block;
+    background-color: #b11016;
   }
 }
 
-/* Adaptación responsive - Monitores  900-1300px */
-
-@media only screen and (min-device-width: 900px) and (max-device-width: 1300 px){
-  .barraNav { /* Posición del menú */
-      overflow: hidden;
-      background-color: #b11016;
-      color: white;
-      box-sizing: border-box;
-      flex-direction: row;
-  }
-  .barraNav a { /* Posición de los elementos del menú */
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;  
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 12px 110px;
-    text-decoration: none;
-  }
-  .barraNav a:hover { /* Posición - animación del menú */
-      background-color: rgb(255, 255, 255);
-      color: black;
-  }
-}
-
-/* Adaptación responsive - iPad Vertical */
-
-@media all and (orientation: portrait) and (max-device-width: 1024px) and (max-device-height: 768px){
-  .barraNav { /* Posición del menú */
-      overflow: hidden;
-      background-color: #b11016;
-      color: white;
-      box-sizing: border-box;
-      flex-direction: row;
-  }
-  .barraNav a { /* Posición de los elementos del menú */
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;  
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 12px 110px;
-    text-decoration: none;
-  }
-  .barraNav a:hover { /* Posición - animación del menú */
-      background-color: rgb(255, 255, 255);
-      color: black;
-  }
-}
-
-/* Adaptación responsive - iPad Horizontal */
-
-@media all and (orientation: portrait) and (max-device-width: 728px) and (max-device-height: 1024px){
-  .barraNav { /* Posición del menú */
-      overflow: hidden;
-      background-color: #b11016;
-      color: white;
-      flex-direction: row;
-  }
-  .barraNav a { /* Posición de los elementos del menú */
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;  
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 12px 110px;
-    text-decoration: none;
-  }
-  .barraNav a:hover { /* Posición - animación del menú */
-      background-color: rgb(255, 255, 255);
-      color: black;
-  }
-}
-
-/* Adaptación responsive - iPhone Portrait */
-
-@media all and (orientation: portrait) and (max-device-width: 2436px) and (max-device-height: 1125px){
-  .barraNav { /* Posición del menú */
-      overflow: hidden;
-      background-color: #b11016;
-      color: white;
-      box-sizing: border-box;
-      flex-direction: row;
-  }
-  .barraNav a { /* Posición de los elementos del menú */
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;  
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 12px 110px;
-    text-decoration: none;
-  }
-  .barraNav a:hover { /* Posición - animación del menú */
-      background-color: rgb(255, 255, 255);
-      color: black;
-  }
-}
-
-/* Adaptación responsive - iPhone Horizontal */
-
-@media all and (orientation: portrait) and (max-device-width: 1125px) and (max-device-height: 2436px){
-  .barraNav { /* Posición del menú */
-      overflow: hidden;
-      background-color: #b11016;
-      color: white;
-      box-sizing: border-box;
-      flex-direction: row;
-  }
-  .barraNav a { /* Posición de los elementos del menú */
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;  
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 12px 110px;
-    text-decoration: none;
-  }
-  .barraNav a:hover { /* Posición - animación del menú */
-      background-color: rgb(255, 255, 255);
-      color: black;
-  }
-}
 header {
-  position: relative;
-  height: 5%;
+  text-align: center;
 }
 
 #contenedor #boxHeader { /* Propiedades del box del header */
@@ -176,8 +83,9 @@ header {
   background-color: black;
 }
 #contenidoHeader {
-  position:absolute;
+  position:relative;
   width: 100%;
+  padding-top: 10px;
   color:white;
 }
 header > h4 {
@@ -361,7 +269,8 @@ aside img {
   max-height: 90%;
 }
 
-.footer { /* Estilo del footer de la página */
+/* Estilo del footer de la página */
+/* .footer { 
   display: block;
   align-self:flex-end;
   background-color: #b11016;
@@ -370,4 +279,4 @@ aside img {
   width: 100%;
   height: 150px;
   margin-bottom: 10px;
-}
+} */

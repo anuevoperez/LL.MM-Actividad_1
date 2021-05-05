@@ -45,27 +45,29 @@
     z-index: -1;
   }
 
-  .barraNav a {
-    overflow: hidden;
+  nav {
+    display: flex;
+    justify-content: space-around;
     background-color: #b11016;
-    color: white;
+    overflow: hidden;
   }
-
+  /* Estilo de los elementos del nav*/
   .barraNav a {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    float: left;
-    display: block;
-    color: none;
-    list-style-type: none;
-    text-align: center;
-    padding: 16px 122.95px;
+    color: #f2f2f2;
+    padding: 1.5rem 2rem;
     text-decoration: none;
+    font-size: 1.5rem;
   }
-
+  
+  /* Cambia de color al pasar el ratón*/
   .barraNav a:hover {
     background-color: white;
     color: black;
+  }
+  
+  /* Oculta el boton desplegable */
+  .barraNav .icono {
+    display: none;
   }
 
   .imagen {
@@ -95,487 +97,35 @@
   }
 }
 
-/* Adaptación de ancho fijo de resoluciones de 900 a 1300 px de ancho. */
 
-@media only screen and (min-device-width: 900px) and (max-device-width: 1300 px) {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,
-      sans-serif;
+
+/* En pantallas móviles se sustituye por un desplegable */
+@media screen and (max-width: 750px) {
+  .barraNav a {
+    display: none;
   }
 
-  h1,
-  h2,
-  h3,
-  h5 {
-    text-align: center;
+  .barraNav a.icono {
+    float: right;
+    display: block;
   }
 
-  h3 {
-    font-size: 40px;
+  .barraNav.responsive {
+    position: relative;
   }
-
-  h4 {
-    font-size: 30px;
+  .barraNav.responsive a.icono {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .barraNav.responsive a {
+    float: none;
+    display: block;
     text-align: left;
   }
 
-  article {
-    font-size: 20px;
-    text-align: justify;
-  }
-
-  video {
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    min-width: 50%;
-    min-height: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    opacity: 0.3;
-
-    z-index: -1;
-  }
-
-  .barraNav a {
-    overflow: hidden;
+  nav {
+    display: block;
     background-color: #b11016;
-    color: white;
-  }
-
-  .barraNav a {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    float: left;
-    display: block;
-    color: none;
-    list-style-type: none;
-    text-align: center;
-    padding: 16px 122.95px;
-    text-decoration: none;
-  }
-
-  .barraNav a:hover {
-    background-color: white;
-    color: black;
-  }
-
-  .imagen {
-    width: 100%;
-    display: block;
-    margin: auto;
-  }
-
-  .publiText {
-    flex: 50%;
-  }
-
-  .publicaciones {
-    display: flex; /* establish flex container */
-    align-items: center; /* center flex items vertically */
-  }
-
-  .principal {
-    float: left;
-    width: 80%;
-
-  }
-
-  .secundario {
-    float: right;
-    width: 20%;
-  }
-}
-
-/* Adaptación para iPad posición vertical */
-
-@media all and (orientation: portrait) and (max-device-width: 1024px) and (max-device-height: 768px) {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,
-      sans-serif;
-  }
-
-  h1,
-  h2,
-  h3,
-  h5 {
-    text-align: center;
-  }
-
-  h3 {
-    font-size: 40px;
-  }
-
-  h4 {
-    font-size: 30px;
-    text-align: left;
-  }
-
-  article {
-    font-size: 20px;
-    text-align: justify;
-  }
-
-  video {
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    min-width: 50%;
-    min-height: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    opacity: 0.3;
-
-    z-index: -1;
-  }
-
-  .barraNav a {
-    overflow: hidden;
-    background-color: #b11016;
-    color: white;
-  }
-
-  .barraNav a {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    float: left;
-    display: block;
-    color: none;
-    list-style-type: none;
-    text-align: center;
-    padding: 16px 122.95px;
-    text-decoration: none;
-  }
-
-  .barraNav a:hover {
-    background-color: white;
-    color: black;
-  }
-
-  .imagen {
-    width: 100%;
-    display: block;
-    margin: auto;
-  }
-
-  .publiText {
-    flex: 50%;
-  }
-
-  .publicaciones {
-    display: flex; /* establish flex container */
-    align-items: center; /* center flex items vertically */
-  }
-
-  .principal {
-    float: left;
-    width: 80%;
-
-  }
-
-  .secundario {
-    float: right;
-    width: 20%;
-  }
-}
-
-/* Adaptación para iPad posición horizontal */
-
-@media all and (orientation: portrait) and (max-device-width: 728px) and (max-device-height: 1024px) {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,
-      sans-serif;
-  }
-
-  h1,
-  h2,
-  h3,
-  h5 {
-    text-align: center;
-  }
-
-  h3 {
-    font-size: 40px;
-  }
-
-  h4 {
-    font-size: 30px;
-    text-align: left;
-  }
-
-  article {
-    font-size: 20px;
-    text-align: justify;
-  }
-
-  video {
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    min-width: 50%;
-    min-height: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    opacity: 0.3;
-
-    z-index: -1;
-  }
-
-  .barraNav a {
-    overflow: hidden;
-    background-color: #b11016;
-    color: white;
-  }
-
-  .barraNav a {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    float: left;
-    display: block;
-    color: none;
-    list-style-type: none;
-    text-align: center;
-    padding: 16px 122.95px;
-    text-decoration: none;
-  }
-
-  .barraNav a:hover {
-    background-color: white;
-    color: black;
-  }
-
-  .imagen {
-    width: 100%;
-    display: block;
-    margin: auto;
-  }
-
-  .publiText {
-    flex: 50%;
-  }
-
-  .publicaciones {
-    display: flex; /* establish flex container */
-    align-items: center; /* center flex items vertically */
-  }
-
-  .principal {
-    float: left;
-    width: 80%;
-
-  }
-
-  .secundario {
-    float: right;
-    width: 20%;
-  }
-}
-
-/* Posición iPhone vertical */
-
-@media all and (orientation: portrait) and (max-device-width: 2436px) and (max-device-height: 1125px) {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,
-      sans-serif;
-  }
-
-  h1,
-  h2,
-  h3,
-  h5 {
-    text-align: center;
-  }
-
-  h3 {
-    font-size: 40px;
-  }
-
-  h4 {
-    font-size: 30px;
-    text-align: left;
-  }
-
-  article {
-    font-size: 20px;
-    text-align: justify;
-  }
-
-  video {
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    min-width: 50%;
-    min-height: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    opacity: 0.3;
-
-    z-index: -1;
-  }
-
-  .barraNav a {
-    overflow: hidden;
-    background-color: #b11016;
-    color: white;
-  }
-
-  .barraNav a {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    float: left;
-    display: block;
-    color: none;
-    list-style-type: none;
-    text-align: center;
-    padding: 16px 122.95px;
-    text-decoration: none;
-  }
-
-  .barraNav a:hover {
-    background-color: white;
-    color: black;
-  }
-
-  .imagen {
-    width: 100%;
-    display: block;
-    margin: auto;
-  }
-
-  .publiText {
-    flex: 50%;
-  }
-
-  .publicaciones {
-    display: flex; /* establish flex container */
-    align-items: center; /* center flex items vertically */
-  }
-
-  .principal {
-    float: left;
-    width: 80%;
-
-  }
-
-  .secundario {
-    float: right;
-    width: 20%;
-  }
-}
-
-/* Posición iPhone horizontal */
-
-@media all and (orientation: portrait) and (max-device-width: 1125px) and (max-device-height: 2436px) {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,
-      sans-serif;
-  }
-
-  h1,
-  h2,
-  h3,
-  h5 {
-    text-align: center;
-  }
-
-  h3 {
-    font-size: 40px;
-  }
-
-  h4 {
-    font-size: 30px;
-    text-align: left;
-  }
-
-  article {
-    font-size: 20px;
-    text-align: justify;
-  }
-
-  video {
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    min-width: 50%;
-    min-height: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    opacity: 0.3;
-
-    z-index: -1;
-  }
-
-  .barraNav a {
-    overflow: hidden;
-    background-color: #b11016;
-    color: white;
-  }
-
-  .barraNav a {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    float: left;
-    display: block;
-    color: none;
-    list-style-type: none;
-    text-align: center;
-    padding: 16px 122.95px;
-    text-decoration: none;
-  }
-
-  .barraNav a:hover {
-    background-color: white;
-    color: black;
-  }
-
-  .imagen {
-    width: 100%;
-    display: block;
-    margin: auto;
-  }
-
-  .publiText {
-    flex: 50%;
-  }
-
-  .publicaciones {
-    display: flex; /* establish flex container */
-    align-items: center; /* center flex items vertically */
-  }
-
-  .principal {
-    float: left;
-    width: 80%;
-
-  }
-
-  .secundario {
-    float: right;
-    width: 20%;
   }
 }
