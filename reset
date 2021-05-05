@@ -1,0 +1,84 @@
+[33mcommit 3820b595bc8031392c35e4cefaa87837c8bc259f[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;31morigin/Carlos[m[33m)[m
+Author: Carlos Fuentes <c.fvazquez@hotmail.com>
+Date:   Wed May 5 10:49:12 2021 +0200
+
+    cambio nombre .css
+
+[33mcommit 7075e0639c2605ae361e5d7c06da8c86d9645194[m
+Author: Carlos Fuentes <c.fvazquez@hotmail.com>
+Date:   Wed May 5 10:46:00 2021 +0200
+
+    Logo link
+
+[33mcommit 93871125985475c57d140bca59d112969db2b3fa[m
+Author: Carlos Fuentes <c.fvazquez@hotmail.com>
+Date:   Wed May 5 10:41:45 2021 +0200
+
+    Mejora total
+
+[33mcommit 3289a66a671840b29b10c0ba9ef36d5df48be846[m
+Author: Carlos Fuentes <c.fvazquez@hotmail.com>
+Date:   Wed May 5 09:56:07 2021 +0200
+
+    ordenar rama main
+
+[33mcommit b0d5a833607d2cb5b0c6988dab90adf2eec4e31f[m
+Merge: c6f5952 abf6422
+Author: Carlos Fuentes <c.fvazquez@hotmail.com>
+Date:   Wed May 5 09:52:51 2021 +0200
+
+    merge Carlos
+
+[33mcommit c6f5952c1b87254ec8328639bf2c9809ef5d1c3e[m[33m ([m[1;31morigin/ramaJorge[m[33m)[m
+Author: jorge jaen <jorgejaen14@gmail.com>
+Date:   Wed May 5 01:27:43 2021 +0200
+
+    contacto y formulario 1.0, falta estilos
+
+[33mcommit aaa658f440cda6d0e0b83e3878716330d8720dd6[m
+Author: jorge jaen <jorgejaen14@gmail.com>
+Date:   Tue May 4 23:11:43 2021 +0200
+
+    Cabecera, nav y ordenación carpetas
+
+[33mcommit abf6422bd98f9d2ba2af1ca7775b0c9a9a3d451a[m
+Author: Carlos Fuentes <c.fvazquez@hotmail.com>
+Date:   Tue May 4 22:31:33 2021 +0200
+
+    horario
+
+[33mcommit 530cf16cc835a20827906777a58f6b21d3ba2932[m
+Author: Carlos Fuentes <c.fvazquez@hotmail.com>
+Date:   Tue May 4 20:00:38 2021 +0200
+
+    Cuarto commit
+
+[33mcommit 8b333e29a11f2e8f104d1603bfa140a348278113[m
+Author: Carlos Fuentes <c.fvazquez@hotmail.com>
+Date:   Tue May 4 19:55:13 2021 +0200
+
+    Third commit
+
+[33mcommit 5fd0834875b5b7a4ca6dc9c4069781d81cb443c7[m
+Author: Carlos Fuentes <c.fvazquez@hotmail.com>
+Date:   Tue May 4 19:53:14 2021 +0200
+
+    Second commit
+
+[33mcommit 1bbb4c450c4b88953a3723ae7d5538d16e94d213[m
+Author: Carlos Fuentes <c.fvazquez@hotmail.com>
+Date:   Tue May 4 19:39:26 2021 +0200
+
+    first commit
+
+[33mcommit b4686cdceed76289f89cad098112eff15879acb1[m[33m ([m[1;31morigin/Adrian[m[33m)[m
+Author: adriannuevo <nuevoperez.adrian@gmail.com>
+Date:   Mon May 3 19:30:10 2021 +0200
+
+    Trabajo Adrián
+
+[33mcommit 1aaef9a8b98a824dc9271a3a27ac798cd49b357c[m
+Author: adriannuevo <nuevoperez.adrian@gmail.com>
+Date:   Mon May 3 19:27:41 2021 +0200
+
+    Primer commit
