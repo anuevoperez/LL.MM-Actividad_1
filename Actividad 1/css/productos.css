@@ -1,0 +1,372 @@
+#contenedor { /* Propiedades del contenedor global */
+  width: 100%;
+  height: 100%;
+}
+
+header { /* Posición del header - Logo*/
+  position: 20px;
+}
+
+header h1 { /* Titular de la sección */
+  text-align:center;
+}
+
+/* Adaptación responsive - Monitores > 1300px */
+@media screen and (min-width: 1300px){
+  .barraNav { /* Posición del menú */
+      overflow: hidden;
+      background-color: #b11016;
+      color: white;
+      box-sizing: border-box;
+      flex-direction: row;
+  }
+  .barraNav a { /* Posición de los elementos del menú */
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;  
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px 110px;
+    text-decoration: none;
+  }
+  .barraNav a:hover { /* Posición - animación del menú */
+      background-color: rgb(255, 255, 255);
+      color: black;
+  }
+}
+
+/* Adaptación responsive - Monitores  900-1300px */
+
+@media only screen and (min-device-width: 900px) and (max-device-width: 1300 px){
+  .barraNav { /* Posición del menú */
+      overflow: hidden;
+      background-color: #b11016;
+      color: white;
+      box-sizing: border-box;
+      flex-direction: row;
+  }
+  .barraNav a { /* Posición de los elementos del menú */
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;  
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px 110px;
+    text-decoration: none;
+  }
+  .barraNav a:hover { /* Posición - animación del menú */
+      background-color: rgb(255, 255, 255);
+      color: black;
+  }
+}
+
+/* Adaptación responsive - iPad Vertical */
+
+@media all and (orientation: portrait) and (max-device-width: 1024px) and (max-device-height: 768px){
+  .barraNav { /* Posición del menú */
+      overflow: hidden;
+      background-color: #b11016;
+      color: white;
+      box-sizing: border-box;
+      flex-direction: row;
+  }
+  .barraNav a { /* Posición de los elementos del menú */
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;  
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px 110px;
+    text-decoration: none;
+  }
+  .barraNav a:hover { /* Posición - animación del menú */
+      background-color: rgb(255, 255, 255);
+      color: black;
+  }
+}
+
+/* Adaptación responsive - iPad Horizontal */
+
+@media all and (orientation: portrait) and (max-device-width: 728px) and (max-device-height: 1024px){
+  .barraNav { /* Posición del menú */
+      overflow: hidden;
+      background-color: #b11016;
+      color: white;
+      flex-direction: row;
+  }
+  .barraNav a { /* Posición de los elementos del menú */
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;  
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px 110px;
+    text-decoration: none;
+  }
+  .barraNav a:hover { /* Posición - animación del menú */
+      background-color: rgb(255, 255, 255);
+      color: black;
+  }
+}
+
+/* Adaptación responsive - iPhone Portrait */
+
+@media all and (orientation: portrait) and (max-device-width: 2436px) and (max-device-height: 1125px){
+  .barraNav { /* Posición del menú */
+      overflow: hidden;
+      background-color: #b11016;
+      color: white;
+      box-sizing: border-box;
+      flex-direction: row;
+  }
+  .barraNav a { /* Posición de los elementos del menú */
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;  
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px 110px;
+    text-decoration: none;
+  }
+  .barraNav a:hover { /* Posición - animación del menú */
+      background-color: rgb(255, 255, 255);
+      color: black;
+  }
+}
+
+/* Adaptación responsive - iPhone Horizontal */
+
+@media all and (orientation: portrait) and (max-device-width: 1125px) and (max-device-height: 2436px){
+  .barraNav { /* Posición del menú */
+      overflow: hidden;
+      background-color: #b11016;
+      color: white;
+      box-sizing: border-box;
+      flex-direction: row;
+  }
+  .barraNav a { /* Posición de los elementos del menú */
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;  
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px 110px;
+    text-decoration: none;
+  }
+  .barraNav a:hover { /* Posición - animación del menú */
+      background-color: rgb(255, 255, 255);
+      color: black;
+  }
+}
+header {
+  position: relative;
+  height: 5%;
+}
+
+#contenedor #boxHeader { /* Propiedades del box del header */
+  position: relative;
+  width: 100%;
+  height: 5%;
+  background-color: black;
+}
+#contenidoHeader {
+  position:absolute;
+  width: 100%;
+  color:white;
+}
+header > h4 {
+  left: 2%;
+}
+section > header { /* Alineación del titular - página */
+  position:relative;
+  margin-left: 20px;
+}
+
+section { /* Propiedades - sección*/
+  width: 60%;
+  float: left;
+  height: 800px;
+  margin-top: 10px;
+  margin-bottom: 20%;
+  margin-left: 10%;
+}
+
+
+#fitness, #running, #yoga, #senderismo, #baloncesto, #natacion { /* Prop. Cajas para imágenes*/
+    width: 230px;
+    height: 230px;
+    display: inline-block;
+    margin: 20px;
+}
+
+#contenedor #fitness #imgFit { /* Posición - img. Fitness */
+  position: relative;
+  overflow: hidden;
+}
+
+#contenedor #fitness #imgFit img { /* Propiedades - img.Fitness */
+  width: 230px;
+  height: 230px;
+  transition: transform 2s;
+  border-radius: 20px;
+}
+
+#contenedor #fitness #imgFit:hover img { /* Animación - img.Fitness */
+ transform: scale(1.2);
+}
+
+#contenedor #running #imgRun { /* Posición - img. Running */
+  position: relative;
+  overflow: hidden;
+}
+
+#contenedor #running #imgRun img { /* Propiedades - img.Running */
+  width: 230px;
+  height: 230px;
+  transition: transform 2s;
+  border-radius: 20px;
+}
+
+#contenedor #running #imgRun:hover img { /* Animación - img.Running */
+  transform: scale(1.2);
+}
+
+#contenedor #yoga #imgYog { /* Posición - img. Yoga */
+  position: relative;
+  overflow: hidden;
+}
+
+#contenedor #yoga #imgYog img { /* Propiedades - img.Yoga */
+  width: 230px;
+  height: 230px;
+  transition: transform 2s;
+  border-radius: 20px;
+}
+
+#contenedor #yoga #imgYog:hover img { /* Animación - img.Yoga */
+  transform: scale(1.2);
+ }
+
+#contenedor #senderismo #imgSend { /* Posición - img. Senderismo */
+  position: relative;
+  overflow: hidden;
+}
+
+#contenedor #senderismo #imgSend img { /* Propiedades - img.Senderismo */
+  width: 230px;
+  height: 230px;
+  transition: transform 2s;
+  border-radius: 20px;
+}
+
+#contenedor #senderismo #imgSend:hover img { /* Animación - img.Senderismo */
+  transform: scale(1.2);
+}
+
+#contenedor #baloncesto #imgBal { /* Posición - img. Baloncesto */
+  position: relative;
+  overflow: hidden;
+}
+
+#contenedor #baloncesto #imgBal img { /* Propiedades - img.Baloncesto */
+  width: 230px;
+  height: 230px;
+  transition: transform 2s;
+  border-radius: 20px;
+}
+
+#contenedor #baloncesto #imgBal:hover img { /* Animación - img.Baloncesto */
+  transform: scale(1.2);
+ }
+
+#contenedor #natacion #imgNat { /* Posición - img. Natación */
+  position: relative;
+  overflow: hidden;
+}
+
+#contenedor #natacion #imgNat img { /* Propiedades - img.Natación */
+  width: 230px;
+  height: 230px;
+  transition: transform 2s;
+  border-radius: 20px;
+}
+
+#contenedor #natacion #imgNat:hover img { /* Animación - img.Natación */
+  transform: scale(1.2);
+ }
+
+#lineaBanner {
+  position:relative;
+  width: 85%;
+  margin-top: 10px;
+  margin-left: 25%;
+  margin-bottom: 5%;
+}
+
+hr { /* Estilo de la barra divisoria */
+  position: absolute;
+  margin-left: 30%;
+  width: 10%;
+  height: 3px;
+  border-radius: 10px;
+  border: none;
+  background: black;
+}
+
+.Banner { /* Propiedades del banner */
+  width: 85%;
+  height: auto;
+  margin-top: 10%;
+  margin-bottom: 15px;
+  margin-left: 25%;
+}
+
+#contenedor .Banner #imgBanner img { /* Propiedades img.Banner */
+  position: relative;
+  height: 175px;
+  width: 65%;
+}
+
+.secundario { /* Posición del aside */
+  float: right;
+  width: 15%;
+}
+
+.secundariob {
+  position: absolute;
+  margin-left: 10px;
+}
+
+aside { /* Estilo del aside*/
+  width:40%;
+  height:600px; 
+  float: left;
+  margin-top: 10px;
+  margin-bottom:10px;
+}
+
+aside h2 { /* Estilo del headline del aside */
+  margin-left: 5%;
+}
+
+aside img {
+  position:relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.footer { /* Estilo del footer de la página */
+  display: block;
+  background-color: #b11016;
+  box-sizing: border-box;
+  clear: both;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 10px;
+}
