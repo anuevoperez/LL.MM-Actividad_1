@@ -363,6 +363,7 @@ aside img {
 
 .footer { /* Estilo del footer de la página */
   display: block;
+  align-self:flex-end;
   background-color: #b11016;
   box-sizing: border-box;
   clear: both;
