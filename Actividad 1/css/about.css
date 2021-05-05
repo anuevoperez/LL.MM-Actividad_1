@@ -1,68 +1,82 @@
-h1,
-h2,
-h3,
-h4,
-h5 {
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,
     sans-serif;
 }
 
-h1,
-h2,
-h3, p {
+header {
   text-align: center;
 }
-h3 {
-  font-size: 40px;
-}
+
 .centrado {
   text-align: center;
 }
-.sobre {
-  padding-top: 20px;
-}
 
-/*mirar mejor esto*/
-.horario {
-  display: inline-block;
-  width: 270px;
-  border: 5px solid black;
-  top: 30px;
-  background-color: #f8f8f8;
-  margin-left: 30%;
-}
-
-.contacto {
-  position: relative;
-  margin: auto;
-  width: 270px;
-  border: 5px solid black;
-  background-color: #f8f8f8;
-}
-
-article {
+section {
   font-size: 20px;
   text-align: justify;
 }
-.barraNav a {
-  overflow: hidden;
+
+.horario {
+  position: relative;
+  margin: auto;
+  width: 275px;
+  border: 5px solid black;
+  background-color: gainsboro;
+  
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
   background-color: #b11016;
-  color: white;
+  overflow: hidden;
 }
-
+/* Estilo de los elementos del nav*/
 .barraNav a {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-  "Lucida Sans", Arial, sans-serif;
-  float: left;
-  display: block;
-  color: none;
-  list-style-type: none;
-  text-align: center;
-  padding: 16px 122.95px;
+  color: #f2f2f2;
+  padding: 1.5rem 2rem;
   text-decoration: none;
+  font-size: 1.5rem;
 }
 
+/* Cambia de color al pasar el ratón*/
 .barraNav a:hover {
   background-color: white;
   color: black;
+}
+
+/* Oculta el boton desplegable */
+.barraNav .icono {
+  display: none;
+}
+
+/* En pantallas móviles se sustituye por un desplegable */
+@media screen and (max-width: 750px) {
+  .barraNav a {
+    display: none;
+  }
+
+  .barraNav a.icono {
+    float: right;
+    display: block;
+  }
+
+  .barraNav.responsive {
+    position: relative;
+  }
+  .barraNav.responsive a.icono {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .barraNav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  nav {
+    display: block;
+    background-color: #b11016;
+  }
 }
