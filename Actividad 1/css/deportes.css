@@ -4,43 +4,42 @@
 }
 
 header { /* Posición del header - Logo*/
-  position: 20px;
+  text-align: center;
 }
 
 header h1 { /* Titular de la sección */
   text-align:center;
 }
 
-header {
-  position: relative;
-  height: 5%;
-}
 
-nav {
-  display: flex;
-  justify-content: space-around;
-  background-color: #b11016;
-  overflow: hidden;
-}
 
-/* Estilo de los elementos del nav*/
-.barraNav a {
-  color: #f2f2f2;
-  padding: 1.5rem 2rem;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
+  nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #b11016;
+    overflow: hidden;
+  }
+  /* Estilo de los elementos del nav*/
+  .barraNav a {
+    color: #f2f2f2;
+    padding: 1.5rem 2rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  /* Cambia de color al pasar el ratón*/
+  .barraNav a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Oculta el boton desplegable */
+  .barraNav .icono {
+    display: none;
+  }
+  
 
-/* Cambia de color al pasar el ratón*/
-.barraNav a:hover {
-  background-color: white;
-  color: black;
-}
 
-/* Oculta el boton desplegable */
-.barraNav .icono {
-  display: none;
-}
 
 /* En pantallas móviles se sustituye por un desplegable */
 @media screen and (max-width: 750px) {
@@ -73,6 +72,10 @@ nav {
   }
 }
 
+header {
+  text-align: center;
+}
+
 #contenedor #boxHeader { /* Propiedades del box del header */
   position: relative;
   width: 100%;
@@ -80,11 +83,11 @@ nav {
   background-color: black;
 }
 #contenidoHeader {
-  position:absolute;
+  position:relative;
   width: 100%;
+  padding-top: 10px;
   color:white;
 }
-
 header > h4 {
   left: 2%;
 }
@@ -266,12 +269,14 @@ aside img {
   max-height: 90%;
 }
 
-.footer { /* Estilo del footer de la página */
+/* Estilo del footer de la página */
+/* .footer { 
   display: block;
+  align-self:flex-end;
   background-color: #b11016;
   box-sizing: border-box;
   clear: both;
   width: 100%;
   height: 150px;
   margin-bottom: 10px;
-}
+} */
