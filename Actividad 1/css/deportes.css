@@ -1,17 +1,16 @@
-#contenedor { /* Propiedades del contenedor global */
-  width: 100%;
-  height: 100%;
-}
+  #contenedor { /* Propiedades del contenedor global */
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+  }
 
-header { /* Posición del header - Logo*/
-  text-align: center;
-}
+  header { /* Posición del header - Logo*/
+    text-align: center;
+  }
 
-header h1 { /* Titular de la sección */
-  text-align:center;
-}
-
-
+  header h1 { /* Titular de la sección */
+    text-align:center;
+  }
 
   nav {
     display: flex;
@@ -37,9 +36,6 @@ header h1 { /* Titular de la sección */
   .barraNav .icono {
     display: none;
   }
-  
-
-
 
 /* En pantallas móviles se sustituye por un desplegable */
 @media screen and (max-width: 750px) {
@@ -99,12 +95,12 @@ section > header { /* Alineación del titular - página */
 section { /* Propiedades - sección*/
   width: 60%;
   float: left;
+  margin-left: 10%;
   height: 800px;
   margin-top: 10px;
   margin-bottom: 20%;
-  margin-left: 10%;
+  padding-bottom: 2.5rem;
 }
-
 
 #fitness, #running, #yoga, #senderismo, #baloncesto, #natacion { /* Prop. Cajas para imágenes*/
     width: 230px;
@@ -228,10 +224,11 @@ hr { /* Estilo de la barra divisoria */
 }
 
 .Banner { /* Propiedades del banner */
+  position: relative;
   width: 85%;
   height: auto;
   margin-top: 10%;
-  margin-bottom: 15px;
+  margin-bottom: 10%;
   margin-left: 25%;
 }
 
@@ -252,6 +249,7 @@ hr { /* Estilo de la barra divisoria */
 }
 
 aside { /* Estilo del aside*/
+  z-index: 1;
   width:40%;
   height:600px; 
   float: left;
@@ -270,13 +268,12 @@ aside img {
 }
 
 /* Estilo del footer de la página */
-/* .footer { 
-  display: block;
-  align-self:flex-end;
-  background-color: #b11016;
-  box-sizing: border-box;
+#footer { 
+  position: absolute;
   clear: both;
+  background-color: #b11016;
   width: 100%;
-  height: 150px;
-  margin-bottom: 10px;
-} */
+  bottom: 0;
+  height: 100px;
+} 
+
